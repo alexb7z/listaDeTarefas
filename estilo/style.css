@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../imagens/1318148.png) no-repeat center/cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(73, 80, 87, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    font-size: large;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inserirItem {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: rgba(52, 58, 64, 0.5);
+    color: white;
+}
+
+.inserirItem:focus{
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.inserirItem::placeholder{
+    color: rgb(202, 202, 202);
+}
+
+#prioridade {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(52, 58, 64, 0.5);
+    font-size: 16px;
+    color: rgb(202, 202, 202);
+}
+
+#prioridade:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.adicionarItem {
+    background-color: #007BFF;
+    margin-left: 1.5%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.span{
+    display: flex;
+    gap: 10px;
+}
+
+.adicionarItem:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#lista {
+    padding-left: 0;
+    list-style: none;
+    word-wrap: break-word;
+}
+
+#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(52, 58, 64, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#lista li button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 8%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#lista li button.concluir {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#lista li div.buttons {
+    display: flex;
+    align-items: center;
+}
+
+#lista li div.buttons button {
+    margin-right: 10px;
+}
+
+#lista li.strikethrough span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+@media (max-width: 1024px) {
+
+    body{
+        background: url(../imagens/1.jpg) no-repeat center/cover;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

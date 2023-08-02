@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista com Prioridades</title>
+        <link rel="stylesheet" href="estilo/reset.css">
+        <link rel="stylesheet" href="estilo/style.css">
+    </head>
+    <body>
+        <section class="container">
+            <h1 class="titulo">Lista de Tarefas</h1>
+            <div class="form">
+                <input class="inserirItem" type="text" id="item" placeholder="Digite um item">
+                <select id="prioridade">
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+                <button class="adicionarItem" onclick="adicionarItem()">Adicionar</button>
+            </div>
+            <ul id="lista">
+            </ul>
+        </section>
+        
+    <script src="script/main.js"></script>
+</body>
+</html>
